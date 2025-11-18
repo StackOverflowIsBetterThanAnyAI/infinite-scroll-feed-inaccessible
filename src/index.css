@@ -1,0 +1,130 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+a:hover,
+button:not(:disabled):hover,
+input[type='checkbox']:not(:disabled):hover,
+input[type='button']:not(:disabled):hover {
+    @apply cursor-pointer drop-shadow-stone-600/25 drop-shadow-xs;
+}
+
+a:active,
+button:not(:disabled):active,
+input[type='checkbox']:not(:disabled):active,
+input[type='button']:not(:disabled):active {
+    @apply cursor-pointer drop-shadow-stone-600/25 drop-shadow-xs;
+}
+
+body {
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+}
+
+.text-small {
+    @apply text-xs sm:text-sm;
+}
+
+.text-normal {
+    @apply text-sm sm:text-base lg:text-lg;
+}
+
+.text-large {
+    @apply text-base sm:text-lg lg:text-xl;
+}
+
+.text-very-large {
+    @apply text-xl sm:text-2xl lg:text-3xl;
+}
+
+.text-extremely-large {
+    @apply text-3xl sm:text-5xl lg:text-7xl;
+}
+
+@theme inline {
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-background: var(--background);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-destructive: var(--destructive);
+    --color-foreground: var(--foreground);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-ring: var(--ring-dark);
+    --color-ring-light: var(--ring-light);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+}
+
+:root {
+    --radius: 0.625rem;
+    --background: oklch(0.985 0 0);
+    --foreground: oklch(0.141 0.005 285.823);
+    --card: oklch(0.985 0 0);
+    --card-foreground: oklch(0.141 0.005 285.823);
+    --accent: oklch(0.967 0.001 286.375);
+    --accent-foreground: oklch(0.21 0.006 285.885);
+    --destructive: oklch(0.577 0.245 27.325);
+    --muted-foreground: oklch(43.965% 0.00491 286.052);
+    --primary: oklch(0.21 0.006 285.885);
+    --primary-foreground: oklch(0.985 0 0);
+    --ring-dark: oklch(0.141 0.005 285.823);
+    --ring-light: oklch(0.985 0 0);
+    --secondary: oklch(0.967 0.001 286.375);
+    --secondary-foreground: oklch(0.21 0.006 285.885);
+}
+
+@layer base {
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+@keyframes scrollpartner {
+    0% {
+        transform: translateX(2%);
+    }
+    50% {
+        transform: translateX(-98%);
+    }
+    100% {
+        transform: translateX(2%);
+    }
+}
+
+.animate-scroll {
+    animation: scrollpartner 30s ease-in-out infinite;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-stone-800;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-stone-400 rounded-md;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-stone-300/50 rounded-md;
+}
+
+::-webkit-scrollbar-thumb:active {
+    @apply bg-stone-400/50 rounded-md;
+}
