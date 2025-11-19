@@ -38,13 +38,16 @@ const Quote = () => {
     useLoadQuote(loadQuote, setContentLoaded, setQuote)
 
     return (
-        <section className="w-full max-w-7xl" ref={quoteRef}>
-            <blockquote className="flex flex-col gap-2 sm:gap-4 text-center text-pretty bg-stone-100 text-stone-950 p-4 sm:p-8 lg:p-10 lg:px-12 my-6 lg:my-8">
+        <div className="w-full max-w-7xl" ref={quoteRef}>
+            <div className="flex flex-col gap-2 sm:gap-4 text-center text-pretty bg-stone-100 text-stone-950 p-4 sm:p-8 lg:p-10 lg:px-12 my-6 lg:my-8">
                 <SectionHeader>Quote of the Day</SectionHeader>
                 {quote ? (
                     <div className="flex flex-col text-normal">
                         <i>&quot;{quote.body}&quot;</i>
-                        <p className="self-end px-4 py-1"> - unknown author</p>
+                        <div className="self-end px-4 py-1">
+                            {' '}
+                            - unknown author
+                        </div>
                     </div>
                 ) : (
                     <div className="flex flex-col gap-4 lg:mt-1">
@@ -53,8 +56,8 @@ const Quote = () => {
                         <Skeleton className="self-end h-[18px] w-32 rounded-full" />
                     </div>
                 )}
-            </blockquote>
-        </section>
+            </div>
+        </div>
     )
 }
 

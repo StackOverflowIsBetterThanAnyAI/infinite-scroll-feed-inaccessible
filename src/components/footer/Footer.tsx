@@ -12,7 +12,7 @@ const Footer = () => {
     }
 
     return (
-        <footer
+        <div
             className="flex flex-col gap-y-2 w-full max-w-5xl text-pretty text-center text-small text-zinc-100 pb-2 pt-6 px-4 mb-1 mt-auto"
             data-testid="footer"
         >
@@ -44,7 +44,7 @@ const Footer = () => {
                 </svg>
                 <span>GitHub Repository</span>
             </a>
-        </footer>
+        </div>
     )
 }
 

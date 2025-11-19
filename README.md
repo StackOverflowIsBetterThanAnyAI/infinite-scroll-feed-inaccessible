@@ -22,21 +22,31 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 -   no aria-label for back-to-top button (Success Criterion 1.1.1 Non-text Content)
 -   no aria-label for burger menu on non-desktop viewports (Success Criterion 1.1.1 Non-text Content)
 -   no aria-label for expanded burger menu navigation on non-desktop viewports (Success Criterion 1.1.1 Non-text Content)
+-   replace semantic html (nav) with div (Success Criterion 1.3.1 Info and Relationships)
 
 ### Hero
 
 -   no alt attribute for image (Success Criterion 1.1.1 Non-text Content)
+-   replace semantic html (section, h1, strong 4x, p 3x) with div and span (Success Criterion 1.3.1 Info and Relationships)
 
 ### Users
 
+-   replace semantic html (section, p 3x) with div (Success Criterion 1.3.1 Info and Relationships)
+
 ### Quote
+
+-   replace semantic html (section, blockquote, p) with div (Success Criterion 1.3.1 Info and Relationships)
 
 ### Partners
 
 -   no alt attribute for image (32x) (Success Criterion 1.1.1 Non-text Content)
+-   replace semantic html (section) with div (Success Criterion 1.3.1 Info and Relationships)
 
 ### Posts
 
 -   no aria-label for loading animation (Success Criterion 1.1.1 Non-text Content)
+-   replace semantic html (main, p 2x) with div (Success Criterion 1.3.1 Info and Relationships)
 
 ### Footer
+
+-   replace semantic html (footer) with div (Success Criterion 1.3.1 Info and Relationships)

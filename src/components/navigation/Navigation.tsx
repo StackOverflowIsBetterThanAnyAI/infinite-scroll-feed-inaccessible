@@ -69,7 +69,7 @@ const Navigation = () => {
 
     return (
         <>
-            <nav
+            <div
                 className={`sticky top-0 z-50 w-full transition-opacity duration-1000 ease-in-out ${navOpacity}
                 bg-stone-800 text-zinc-100 shadow-md shadow-stone-600/80`}
                 data-testid="navigation"
@@ -117,9 +117,9 @@ const Navigation = () => {
                         </Button>
                     )}
                 </div>
-            </nav>
+            </div>
             {SCREEN_WIDTH !== 'DESKTOP' && menuExpanded && (
-                <nav
+                <div
                     className={`sticky top-16 z-50 w-full transition-opacity duration-1000 ease-in-out ${navOpacity}
                         bg-stone-800 text-zinc-100 shadow-md shadow-stone-600/80
                         flex flex-wrap justify-center py-2 px-4 border-t-2 border-stone-600`}
@@ -157,7 +157,7 @@ const Navigation = () => {
                         label="Top 10 Posts"
                         variant="secondary"
                     />
-                </nav>
+                </div>
             )}
         </>
     )

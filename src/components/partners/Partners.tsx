@@ -48,7 +48,7 @@ const Partners = () => {
     ]
 
     return (
-        <section
+        <div
             className="w-full max-w-7xl bg-stone-100 text-stone-950 my-6 lg:my-8 overflow-hidden"
             ref={partnersRef}
         >
@@ -73,7 +73,7 @@ const Partners = () => {
                     )
                 })}
             </div>
-        </section>
+        </div>
     )
 }
 

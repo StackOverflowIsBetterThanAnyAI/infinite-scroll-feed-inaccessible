@@ -56,7 +56,7 @@ const Users = () => {
     useLoadUsers(loadUsers, setContentLoaded, setUsers)
 
     return (
-        <section
+        <div
             className="w-full flex flex-col items-center max-w-7xl p-6 lg:py-8 min-[1304px]:px-0"
             ref={topUsersRef}
         >
@@ -80,8 +80,8 @@ const Users = () => {
                                               </CardDescription>
                                           </CardHeader>
                                           <CardContent>
-                                              <p>{item.company.name}</p>
-                                              <p>{item.company.bs}</p>
+                                              <div>{item.company.name}</div>
+                                              <div>{item.company.bs}</div>
                                           </CardContent>
                                           <CardFooter>
                                               <Button
@@ -156,9 +156,9 @@ const Users = () => {
                                                         </AccordionTrigger>
                                                         <AccordionContent>
                                                             <CardDescription>
-                                                                <p>
+                                                                <div>
                                                                     {item.email}
-                                                                </p>
+                                                                </div>
                                                             </CardDescription>
                                                             <CardFooter className="px-0">
                                                                 <Button
@@ -202,7 +202,7 @@ const Users = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 

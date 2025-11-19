@@ -62,7 +62,7 @@ const Feed = () => {
     useLoadMoreFeedItems(isLoading, loadMoreItems)
 
     return (
-        <main
+        <div
             className="w-full flex flex-col items-center gap-8 lg:gap-12 max-w-7xl bg-stone-300 text-stone-950 lg:rounded-lg mt-6 lg:mt-8 p-3 sm:p-4 lg:p-6
             drop-shadow-stone-900 drop-shadow-sm"
             ref={topTenPostsRef}
@@ -86,7 +86,7 @@ const Feed = () => {
                                                     </CardDescription>
                                                 </CardHeader>
                                                 <CardContent>
-                                                    <p>{item.body}</p>
+                                                    <div>{item.body}</div>
                                                 </CardContent>
                                                 <CardFooter>
                                                     <Badge variant="outline">
@@ -138,7 +138,7 @@ const Feed = () => {
                                     </CardDescription>
                                 </CardHeader>
                                 <CardContent>
-                                    <p>{item.body}</p>
+                                    <div>{item.body}</div>
                                 </CardContent>
                                 <CardFooter>
                                     <Badge variant="outline">
@@ -164,7 +164,7 @@ const Feed = () => {
                     Load more Posts
                 </button>
             </Button>
-        </main>
+        </div>
     )
 }
 
