@@ -17,6 +17,7 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 -   decreased contrast of focus indicator (Success Criterion 1.4.11 Non-text Contrast)
 -   the order of focusable content is in no meaningful order as it uses a zigzag function (Success Criterion 2.4.3 Focus Order)
 -   removed title attribute of web page (Success Criterion 2.4.2 Page Titled)
+-   removed language attribute of web page (Success Criterion 3.1.1 Language of Page)
 
 ### Navigation
 
