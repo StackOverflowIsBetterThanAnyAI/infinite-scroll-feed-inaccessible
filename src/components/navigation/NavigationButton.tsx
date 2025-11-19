@@ -12,7 +12,7 @@ const NavigationButton = ({
     variant,
 }: NavigationButtonProps) => {
     return (
-        <Button asChild variant={variant} className="px-2">
+        <Button asChild variant={variant} className="px-2 navigation-button">
             <button
                 className="text-large"
                 title={`Scroll to ${label}`}

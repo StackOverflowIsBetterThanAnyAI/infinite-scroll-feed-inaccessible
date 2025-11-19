@@ -24,6 +24,7 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 -   no aria-label for burger menu on non-desktop viewports (Success Criterion 1.1.1 Non-text Content)
 -   no aria-label for expanded burger menu navigation on non-desktop viewports (Success Criterion 1.1.1 Non-text Content)
 -   replace semantic html (nav) with div (Success Criterion 1.3.1 Info and Relationships)
+-   trap keyboard focus in navigation bar (Success Criterion 2.1.2 No Keyboard Trap)
 
 ### Hero
 

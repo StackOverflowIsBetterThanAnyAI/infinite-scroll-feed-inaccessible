@@ -29,9 +29,17 @@ export const useFocusTrap = () => {
                 ) as HTMLButtonElement[]
             ).filter((item) => !item.disabled)
 
+            const focusableNavigationElements = focusableElements.filter(
+                (item) => item.classList.contains('navigation-button')
+            )
+
             const zigzagArrayElements = zigzagArray(focusableElements)
 
             const firstFocusableElement = zigzagArrayElements[0]
+            const lastFocusableNavigationElement =
+                focusableNavigationElements[
+                    focusableNavigationElements.length - 1
+                ]
             const lastFocusableElement = zigzagArrayElements.at(-1)
 
             const currentIndex = zigzagArrayElements.indexOf(
@@ -42,12 +50,15 @@ export const useFocusTrap = () => {
 
             if (e.shiftKey) {
                 if (document.activeElement === firstFocusableElement) {
-                    lastFocusableElement?.focus()
+                    lastFocusableNavigationElement?.focus()
                 } else {
                     zigzagArrayElements[currentIndex - 1]?.focus()
                 }
             } else {
-                if (document.activeElement === lastFocusableElement) {
+                if (
+                    document.activeElement === lastFocusableElement ||
+                    document.activeElement === lastFocusableNavigationElement
+                ) {
                     firstFocusableElement?.focus()
                 } else {
                     zigzagArrayElements[currentIndex + 1]?.focus()
