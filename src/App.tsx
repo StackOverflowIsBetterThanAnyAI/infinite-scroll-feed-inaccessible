@@ -28,7 +28,7 @@ export default function App() {
     })
 
     const partnersRef = useRef<HTMLDivElement | null>(null)
-    const quoteRef = useRef<HTMLQuoteElement | null>(null)
+    const quoteRef = useRef<HTMLDivElement | null>(null)
     const topTenPostsRef = useRef<HTMLDivElement | null>(null)
     const topUsersRef = useRef<HTMLDivElement | null>(null)
 
