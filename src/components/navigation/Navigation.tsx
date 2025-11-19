@@ -101,7 +101,7 @@ const Navigation = () => {
                         </div>
                     ) : (
                         <Button asChild variant="ghost">
-                            <button
+                            <div
                                 className="text-very-large rounded-lg h-12 w-12"
                                 onClick={() => setMenuExpanded((prev) => !prev)}
                                 aria-controls="mobile-navigation"
@@ -113,7 +113,7 @@ const Navigation = () => {
                                 }
                             >
                                 {menuExpanded ? '✖' : '☰'}
-                            </button>
+                            </div>
                         </Button>
                     )}
                 </div>

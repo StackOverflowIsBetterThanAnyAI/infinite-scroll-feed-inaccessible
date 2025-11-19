@@ -8,7 +8,7 @@ const NavigationLogo = () => {
 
     return (
         <Button asChild variant="ghost" className="px-0 sm:px-4 h-fit">
-            <button title="Back to the the Top" onClick={handleScrollToTop}>
+            <div title="Back to the the Top" onClick={handleScrollToTop}>
                 <img
                     src={logo}
                     width={48}
@@ -17,7 +17,7 @@ const NavigationLogo = () => {
                     loading="lazy"
                 />
                 <span className="text-large">Infinite Scroll Feed</span>
-            </button>
+            </div>
         </Button>
     )
 }

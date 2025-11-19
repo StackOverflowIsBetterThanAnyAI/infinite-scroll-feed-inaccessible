@@ -160,13 +160,13 @@ const Feed = () => {
                 </div>
             )}
             <Button asChild variant="outline" className="px-4">
-                <button
+                <div
                     className="text-large"
                     title="Load more Posts"
                     onClick={loadMoreItems}
                 >
                     Load more Posts
-                </button>
+                </div>
             </Button>
         </div>
     )

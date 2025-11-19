@@ -25,6 +25,7 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 -   no aria-label for expanded burger menu navigation on non-desktop viewports (Success Criterion 1.1.1 Non-text Content)
 -   replace semantic html (nav) with div (Success Criterion 1.3.1 Info and Relationships)
 -   trap keyboard focus in navigation bar (Success Criterion 2.1.2 No Keyboard Trap)
+-   make burger menu on non-desktop viewports and back-to-top no longer focussable (Success Criterion 2.1.1 Keyboard)
 
 ### Hero
 
@@ -33,6 +34,7 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 -   remove outline from button (Success Criterion 1.4.11 Non-text Contrast)
 -   cut off main header (Success Criterion 1.4.12 Text Spacing)
 -   insufficient line spacing (Success Criterion 1.4.12 Text Spacing)
+-   make button no longer focussable (Success Criterion 2.1.1 Keyboard)
 
 ### Users
 
@@ -55,6 +57,7 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 -   no aria-label for loading animation (Success Criterion 1.1.1 Non-text Content)
 -   replace semantic html (main, p 2x, h2 2x) with div (Success Criterion 1.3.1 Info and Relationships)
 -   reduce contrast for top 10 posts (Success Criterion 1.4.3 Contrast (Minimum))
+-   make load-more button no longer focussable (Success Criterion 2.1.1 Keyboard)
 
 ### Footer
 

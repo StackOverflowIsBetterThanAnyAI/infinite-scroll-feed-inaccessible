@@ -106,13 +106,13 @@ const Hero = () => {
                             variant="outline"
                             className="flex m-auto mt-4 px-8 w-fit"
                         >
-                            <button
+                            <div
                                 className="text-normal"
                                 title="Scroll to the most active users"
                                 onClick={handleScrollToTopUsers}
                             >
                                 Most Active Users
-                            </button>
+                            </div>
                         </Button>
                     </div>
                 </div>
