@@ -1,5 +1,21 @@
 import { useEffect } from 'react'
 
+const zigzagArray = (focusableElements: HTMLButtonElement[]) => {
+    const array = []
+
+    for (let i = 0; i < focusableElements.length; i += 2) {
+        array.push(focusableElements[i])
+        if (focusableElements[i + 2]) {
+            array.push(focusableElements[i + 2])
+        }
+        if (focusableElements[i + 1]) {
+            array.push(focusableElements[i + 1])
+        }
+    }
+
+    return [...new Set(array)]
+}
+
 export const useFocusTrap = () => {
     useEffect(() => {
         const focusTrap = (e: KeyboardEvent) => {
@@ -13,18 +29,28 @@ export const useFocusTrap = () => {
                 ) as HTMLButtonElement[]
             ).filter((item) => !item.disabled)
 
-            const firstFocusableElement = focusableElements[0]
-            const lastFocusableElement = focusableElements.at(-1)
+            const zigzagArrayElements = zigzagArray(focusableElements)
+
+            const firstFocusableElement = zigzagArrayElements[0]
+            const lastFocusableElement = zigzagArrayElements.at(-1)
+
+            const currentIndex = zigzagArrayElements.indexOf(
+                document.activeElement as HTMLButtonElement
+            )
+
+            e.preventDefault()
 
             if (e.shiftKey) {
                 if (document.activeElement === firstFocusableElement) {
-                    e.preventDefault()
                     lastFocusableElement?.focus()
+                } else {
+                    zigzagArrayElements[currentIndex - 1]?.focus()
                 }
             } else {
                 if (document.activeElement === lastFocusableElement) {
-                    e.preventDefault()
                     firstFocusableElement?.focus()
+                } else {
+                    zigzagArrayElements[currentIndex + 1]?.focus()
                 }
             }
         }
