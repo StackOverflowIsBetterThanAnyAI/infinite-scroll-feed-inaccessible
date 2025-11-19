@@ -14,6 +14,7 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 
 ## Added Inaccessibilities (WCAG 2.2)
 
+-   decrease contrast of focus indicator (Success Criterion 1.4.11 Non-text Contrast)
 -   the order of focusable content is in no meaningful order as it uses a zigzag function (Success Criterion 2.4.3 Focus Order)
 
 ### Navigation

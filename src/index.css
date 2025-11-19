@@ -79,8 +79,8 @@ html {
     --muted-foreground: oklch(43.965% 0.00491 286.052);
     --primary: oklch(0.21 0.006 285.885);
     --primary-foreground: oklch(0.985 0 0);
-    --ring-dark: oklch(0.141 0.005 285.823);
-    --ring-light: oklch(0.985 0 0);
+    --ring-dark: oklch(84.669% 0.00696 286.051);
+    --ring-light: oklch(32.313% 0.00282 16.587);
     --secondary: oklch(0.967 0.001 286.375);
     --secondary-foreground: oklch(0.21 0.006 285.885);
 }
