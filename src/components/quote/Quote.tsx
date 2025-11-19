@@ -13,7 +13,7 @@ const Quote = () => {
         throw new Error(
             'Quote must be used within a ContextContentLoaded.Provider'
         )
-    }
+    } // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [_contentLoaded, setContentLoaded] = contextContentLoaded
 
     const contextQuote = useContext(ContextQuote)

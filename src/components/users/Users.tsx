@@ -29,7 +29,7 @@ const Users = () => {
         throw new Error(
             'Users must be used within a ContextContentLoaded.Provider'
         )
-    }
+    } // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [_contentLoaded, setContentLoaded] = contextContentLoaded
 
     const contextTopUsersRef = useContext(ContextTopUsers)

@@ -32,7 +32,7 @@ const Feed = () => {
         throw new Error(
             'Feed must be used within a ContextContentLoaded.Provider'
         )
-    }
+    } // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [_contentLoaded, setContentLoaded] = contextContentLoaded
 
     const contextTopTenPosts = useContext(ContextTopTenPosts)
