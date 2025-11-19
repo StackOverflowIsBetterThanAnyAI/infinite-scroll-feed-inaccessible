@@ -21,7 +21,7 @@ const Footer = () => {
                 Reserved.
             </span>
             <a
-                href="https://github.com/StackOverflowIsBetterThanAnyAI/infinite-scroll-feed"
+                href="https://github.com/StackOverflowIsBetterThanAnyAI/infinite-scroll-feed-inaccessible"
                 onKeyDown={(e) => handleKeyDown(e)}
                 target="_blank"
                 rel="noopener noreferrer"
