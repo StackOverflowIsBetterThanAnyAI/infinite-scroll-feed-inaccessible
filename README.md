@@ -11,3 +11,25 @@ The highlight of this page is the infinite scroll feed, which automatically load
 <img width="883" height="948" alt="preview image" src="https://github.com/user-attachments/assets/636e22e6-8f87-4c78-9f0e-4bb595e651d5" />
 
 This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.com/StackOverflowIsBetterThanAnyAI/infinite-scroll-feed) with the only difference being that it intentionally violates accessibility as often as possible.
+
+## Added Inaccessibilities (WCAG 2.2)
+
+### Navigation
+
+-   no alt attribute for image (Success Criterion 1.1.1 Non-text Content)
+
+### Hero
+
+-   no alt attribute for image (Success Criterion 1.1.1 Non-text Content)
+
+### Users
+
+### Quote
+
+### Partners
+
+-   no alt attribute for image (Success Criterion 1.1.1 Non-text Content)
+
+### Posts
+
+### Footer

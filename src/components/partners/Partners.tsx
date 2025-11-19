@@ -1,5 +1,4 @@
-import { useState, useEffect, useContext } from 'react'
-import { faker } from '@faker-js/faker'
+import { useContext } from 'react'
 
 import logoipsum0 from '@/assets/logoipsum0.webp'
 import logoipsum1 from '@/assets/logoipsum1.webp'
@@ -48,15 +47,6 @@ const Partners = () => {
         logoipsum15,
     ]
 
-    const [partners, setPartners] = useState<{ name: string }[]>([])
-
-    useEffect(() => {
-        const generated = Array.from({ length: images.length }, () => ({
-            name: faker.company.name(),
-        }))
-        setPartners([...generated, ...generated])
-    }, [images.length])
-
     return (
         <section
             className="w-full max-w-7xl bg-stone-100 text-stone-950 my-6 lg:my-8 overflow-hidden"
@@ -75,14 +65,6 @@ const Partners = () => {
                             <div className="h-8 sm:h-12 lg:h-16 flex items-center">
                                 <img
                                     src={item}
-                                    alt={
-                                        partners[index]?.name ||
-                                        `Company ${index}`
-                                    }
-                                    title={
-                                        partners[index]?.name ||
-                                        `Company ${index}`
-                                    }
                                     className="object-contain h-full w-auto saturate-0"
                                     loading="lazy"
                                 />

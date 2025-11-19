@@ -17,7 +17,6 @@ const NavigationLogo = () => {
                     src={logo}
                     width={48}
                     height={48}
-                    alt="Back to the the Top"
                     className="rounded-lg"
                     loading="lazy"
                 />

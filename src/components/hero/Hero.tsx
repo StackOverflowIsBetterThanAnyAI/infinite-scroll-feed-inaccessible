@@ -120,7 +120,6 @@ const Hero = () => {
                 <div className="hidden min-[864px]:flex flex-col gap-2 self-center justify-center items-center p-4 h-fit bg-stone-400/60  outline-4 outline-stone-600 rounded-lg">
                     <img
                         src={heroLogo}
-                        alt="Infinite Scroll Feed Logo"
                         width={192}
                         height={192}
                         loading="lazy"
