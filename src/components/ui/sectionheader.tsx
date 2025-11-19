@@ -5,10 +5,10 @@ type SectionHeaderProps = {
 
 export const SectionHeader = ({ className, children }: SectionHeaderProps) => {
     return (
-        <h2
+        <div
             className={`self-start text-very-large font-semibold underline ${className}`}
         >
             {children}
-        </h2>
+        </div>
     )
 }
