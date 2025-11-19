@@ -36,6 +36,7 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 -   cut off main header (Success Criterion 1.4.12 Text Spacing)
 -   insufficient line spacing (Success Criterion 1.4.12 Text Spacing)
 -   made button no longer focussable (Success Criterion 2.1.1 Keyboard)
+-   removed aria-label and title attributes for anchor (4x) (Success Criterion 2.4.4 Link Purpose (In Context))
 
 ### Users
 
@@ -63,3 +64,4 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 ### Footer
 
 -   replaced semantic html (footer) with div (Success Criterion 1.3.1 Info and Relationships)
+-   removed aria-label and title attributes for anchor (Success Criterion 2.4.4 Link Purpose (In Context))

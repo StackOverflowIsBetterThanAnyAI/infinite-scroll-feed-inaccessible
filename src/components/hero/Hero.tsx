@@ -35,8 +35,6 @@ const Hero = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="underline text-normal"
-                                aria-label="Link to JSON Placeholder (opens in a new tab)"
-                                title="Link to JSON Placeholder (opens in a new tab)"
                             >
                                 JSON Placeholder
                             </a>
@@ -48,8 +46,6 @@ const Hero = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="underline text-normal"
-                                aria-label="Link to Faker (opens in a new tab)"
-                                title="Link to Faker (opens in a new tab)"
                             >
                                 Faker
                             </a>
@@ -61,8 +57,6 @@ const Hero = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="underline text-normal"
-                                aria-label="Link to Logoipsum (opens in a new tab)"
-                                title="Link to Logoipsum (opens in a new tab)"
                             >
                                 Logoipsum
                             </a>
@@ -74,8 +68,6 @@ const Hero = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="underline text-normal"
-                                aria-label="Link to shadcn (opens in a new tab)"
-                                title="Link to shadcn (opens in a new tab)"
                             >
                                 shadcn
                             </a>
