@@ -108,7 +108,6 @@ const Hero = () => {
                         >
                             <button
                                 className="text-normal"
-                                aria-label="Scroll to the most active users"
                                 title="Scroll to the most active users"
                                 onClick={handleScrollToTopUsers}
                             >

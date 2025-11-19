@@ -152,13 +152,12 @@ const Feed = () => {
             )}
             {isLoading && (
                 <div className="p-2 pt-4">
-                    <FetchLoading ariaLabel="Loading more Items." />
+                    <FetchLoading />
                 </div>
             )}
             <Button asChild variant="outline" className="px-4">
                 <button
                     className="text-large"
-                    aria-label="Load more Posts"
                     title="Load more Posts"
                     onClick={loadMoreItems}
                 >

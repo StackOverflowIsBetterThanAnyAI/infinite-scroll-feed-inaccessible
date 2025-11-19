@@ -106,11 +106,6 @@ const Navigation = () => {
                                 onClick={() => setMenuExpanded((prev) => !prev)}
                                 aria-controls="mobile-navigation"
                                 aria-expanded={menuExpanded}
-                                aria-label={
-                                    menuExpanded
-                                        ? 'Close mobile navigation menu'
-                                        : 'Open mobile navigation menu'
-                                }
                                 title={
                                     menuExpanded
                                         ? 'Close mobile navigation menu'
@@ -129,7 +124,6 @@ const Navigation = () => {
                         bg-stone-800 text-zinc-100 shadow-md shadow-stone-600/80
                         flex flex-wrap justify-center py-2 px-4 border-t-2 border-stone-600`}
                     id="mobile-navigation"
-                    aria-label="Navigate to each Section"
                 >
                     <NavigationButton
                         handleScroll={() => {

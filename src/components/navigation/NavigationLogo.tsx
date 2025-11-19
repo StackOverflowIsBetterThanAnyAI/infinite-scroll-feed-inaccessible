@@ -8,11 +8,7 @@ const NavigationLogo = () => {
 
     return (
         <Button asChild variant="ghost" className="px-0 sm:px-4 h-fit">
-            <button
-                aria-label="Scroll back to the the Top"
-                title="Back to the the Top"
-                onClick={handleScrollToTop}
-            >
+            <button title="Back to the the Top" onClick={handleScrollToTop}>
                 <img
                     src={logo}
                     width={48}

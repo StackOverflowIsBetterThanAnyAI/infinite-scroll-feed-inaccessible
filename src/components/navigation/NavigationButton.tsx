@@ -15,7 +15,6 @@ const NavigationButton = ({
         <Button asChild variant={variant} className="px-2">
             <button
                 className="text-large"
-                aria-label={`Scroll to ${label}`}
                 title={`Scroll to ${label}`}
                 onClick={handleScroll}
             >

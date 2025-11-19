@@ -17,6 +17,9 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 ### Navigation
 
 -   no alt attribute for image (Success Criterion 1.1.1 Non-text Content)
+-   no aria-label for back-to-top button (Success Criterion 1.1.1 Non-text Content)
+-   no aria-label for burger menu on non-desktop viewports (Success Criterion 1.1.1 Non-text Content)
+-   no aria-label for expanded burger menu navigation on non-desktop viewports (Success Criterion 1.1.1 Non-text Content)
 
 ### Hero
 
@@ -28,8 +31,10 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 
 ### Partners
 
--   no alt attribute for image (Success Criterion 1.1.1 Non-text Content)
+-   no alt attribute for image (32x) (Success Criterion 1.1.1 Non-text Content)
 
 ### Posts
+
+-   no aria-label for loading animation (Success Criterion 1.1.1 Non-text Content)
 
 ### Footer
