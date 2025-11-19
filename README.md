@@ -60,6 +60,7 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 -   replaced semantic html (main, p 2x, h2 2x) with div (Success Criterion 1.3.1 Info and Relationships)
 -   reduced contrast for top 10 posts (Success Criterion 1.4.3 Contrast (Minimum))
 -   made load-more button no longer focussable (Success Criterion 2.1.1 Keyboard)
+-   reduced size of buttons that show previous / next post (Success Criterion 2.5.8 Target Size (Minimum))
 
 ### Footer
 
