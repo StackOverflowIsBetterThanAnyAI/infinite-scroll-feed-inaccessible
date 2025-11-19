@@ -116,7 +116,7 @@ const Hero = () => {
                         </Button>
                     </div>
                 </div>
-                <div className="hidden min-[864px]:flex flex-col gap-2 self-center justify-center items-center p-4 h-fit bg-stone-400/60  outline-4 outline-stone-600 rounded-lg">
+                <div className="hidden min-[864px]:flex flex-col gap-2 self-center justify-center items-center p-4 h-fit bg-stone-400/60 outline-4 outline-stone-600 rounded-lg">
                     <img
                         src={heroLogo}
                         width={192}
