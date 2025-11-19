@@ -28,6 +28,7 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 
 -   no alt attribute for image (Success Criterion 1.1.1 Non-text Content)
 -   replace semantic html (section, h1, strong 4x, p 3x) with div and span (Success Criterion 1.3.1 Info and Relationships)
+-   remove outline from button (Success Criterion 1.4.11 Non-text Contrast)
 
 ### Users
 
