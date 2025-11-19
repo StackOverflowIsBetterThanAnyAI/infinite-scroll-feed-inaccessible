@@ -8,9 +8,15 @@ For faster data access, the data is stored in SessionStorage after initial loadi
 
 The highlight of this page is the infinite scroll feed, which automatically loads and displays new posts when the end of the page is reached by scrolling. The API provides a total of 500 posts. After that, the end of the page is reached.
 
-<img width="883" height="948" alt="preview image" src="https://github.com/user-attachments/assets/636e22e6-8f87-4c78-9f0e-4bb595e651d5" />
+This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.com/StackOverflowIsBetterThanAnyAI/infinite-scroll-feed) with the only difference being that it intentionally violates accessibility as often as possible:
 
-This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.com/StackOverflowIsBetterThanAnyAI/infinite-scroll-feed) with the only difference being that it intentionally violates accessibility as often as possible.
+-   Accessible Feed:
+
+<img width="1396" height="1914" alt="Image" src="https://github.com/user-attachments/assets/a4cda795-7a9e-40d1-85af-c5d7fcfc9c0f" />
+
+-   Inaccessible Feed:
+
+<img width="1392" height="1924" alt="Image" src="https://github.com/user-attachments/assets/bda8cbdd-bdd7-4733-8e18-d29714c3a6eb" />
 
 ## Added Inaccessibilities (WCAG 2.2)
 
