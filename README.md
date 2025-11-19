@@ -30,6 +30,8 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 -   no alt attribute for image (Success Criterion 1.1.1 Non-text Content)
 -   replace semantic html (section, h1, strong 4x, p 3x) with div and span (Success Criterion 1.3.1 Info and Relationships)
 -   remove outline from button (Success Criterion 1.4.11 Non-text Contrast)
+-   cut off main header (Success Criterion 1.4.12 Text Spacing)
+-   insufficient line spacing (Success Criterion 1.4.12 Text Spacing)
 
 ### Users
 
@@ -38,6 +40,7 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 ### Quote
 
 -   replace semantic html (section, blockquote, p) with div (Success Criterion 1.3.1 Info and Relationships)
+-   insufficient line spacing (Success Criterion 1.4.12 Text Spacing)
 
 ### Partners
 
