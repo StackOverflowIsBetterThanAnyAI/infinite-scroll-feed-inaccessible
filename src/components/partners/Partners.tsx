@@ -65,7 +65,7 @@ const Partners = () => {
                             <div className="h-8 sm:h-12 lg:h-16 flex items-center">
                                 <img
                                     src={item}
-                                    className="object-contain h-full w-auto saturate-0"
+                                    className="object-contain h-full w-auto saturate-0 opacity-60 invert-90"
                                     loading="lazy"
                                 />
                             </div>

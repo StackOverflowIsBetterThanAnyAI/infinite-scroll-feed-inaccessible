@@ -39,8 +39,9 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 
 ### Partners
 
--   no alt attribute for image (32x) (Success Criterion 1.1.1 Non-text Content)
+-   no alt attribute for images (32x) (Success Criterion 1.1.1 Non-text Content)
 -   replace semantic html (section) with div (Success Criterion 1.3.1 Info and Relationships)
+-   invert colors, reduce opacity of images (32x) (Success Criterion 1.4.11 Non-text Contrast)
 
 ### Posts
 
