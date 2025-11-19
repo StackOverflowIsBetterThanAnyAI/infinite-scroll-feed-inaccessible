@@ -5,7 +5,7 @@ import { getItemFromSessionStorage } from '@/utils/getItemFromSessionStorage'
 
 export const useLoadFeedItems = (
     loadMoreItems: () => Promise<void>,
-    nextPage: RefObject<number>,
+    nextPageRef: RefObject<number>,
     setContentLoaded: Dispatch<
         SetStateAction<{
             posts: boolean
@@ -18,12 +18,12 @@ export const useLoadFeedItems = (
     useEffect(() => {
         const parsedStorageData = getItemFromSessionStorage()
         setFeedItems(parsedStorageData?.feedItems || [])
-        nextPage.current = parsedStorageData?.nextPage || 1
+        nextPageRef.current = parsedStorageData?.nextPage || 1
 
         if (!parsedStorageData?.feedItems?.length) {
             loadMoreItems()
         } else {
             setContentLoaded((prev) => ({ ...prev, posts: true }))
         }
-    }, [loadMoreItems, nextPage, setContentLoaded, setFeedItems])
+    }, [loadMoreItems, nextPageRef, setContentLoaded, setFeedItems])
 }
