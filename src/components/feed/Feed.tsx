@@ -69,7 +69,9 @@ const Feed = () => {
         >
             <div className="w-full flex flex-col items-center px-14 sm:px-16 py-6 bg-stone-400/60 rounded-lg shadow-md shadow-stone-500">
                 <div className="w-full flex flex-col gap-4 max-w-3xl">
-                    <SectionHeader>Top 10 Posts of the Week</SectionHeader>
+                    <SectionHeader className="text-stone-700/70">
+                        Top 10 Posts of the Week
+                    </SectionHeader>
                     <div className="w-full">
                         <Carousel>
                             <CarouselContent>
@@ -86,7 +88,9 @@ const Feed = () => {
                                                     </CardDescription>
                                                 </CardHeader>
                                                 <CardContent>
-                                                    <div>{item.body}</div>
+                                                    <div className="text-stone-500/75">
+                                                        {item.body}
+                                                    </div>
                                                 </CardContent>
                                                 <CardFooter>
                                                     <Badge variant="outline">

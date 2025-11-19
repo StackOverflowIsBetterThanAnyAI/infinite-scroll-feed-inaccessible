@@ -52,6 +52,7 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 
 -   no aria-label for loading animation (Success Criterion 1.1.1 Non-text Content)
 -   replace semantic html (main, p 2x) with div (Success Criterion 1.3.1 Info and Relationships)
+-   reduce contrast for top 10 posts (Success Criterion 1.4.3 Contrast (Minimum))
 
 ### Footer
 
