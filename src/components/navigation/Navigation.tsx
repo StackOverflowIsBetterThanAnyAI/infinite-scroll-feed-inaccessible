@@ -104,7 +104,6 @@ const Navigation = () => {
                             <div
                                 className="text-very-large rounded-lg h-12 w-12"
                                 onClick={() => setMenuExpanded((prev) => !prev)}
-                                aria-controls="mobile-navigation"
                                 role="button"
                                 title={
                                     menuExpanded
