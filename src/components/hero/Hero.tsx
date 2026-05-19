@@ -17,7 +17,7 @@ const Hero = () => {
 
     return (
         <div className="w-full flex flex-col items-center gap-8 max-w-7xl bg-stone-100 text-stone-950 p-3 sm:p-4 lg:p-6 my-6 lg:my-8">
-            <div className="text-extremely-large font-mono font-semibold max-w-[740px] overflow-hidden text-nowrap">
+            <div className="text-extremely-large font-mono font-semibold max-w-185 overflow-hidden text-nowrap">
                 Infinite Scroll Feed
             </div>
             <div className="flex justify-center gap-16 text-normal">
@@ -73,7 +73,10 @@ const Hero = () => {
                             </a>
                         </Button>
                     </div>
-                    <div className="py-4 border-b-2 border-stone-400 leading-6">
+                    <div
+                        className="py-4 border-b-2 border-stone-400 leading-4"
+                        aria-label="this attribute is prohibited"
+                    >
                         It makes use of the{' '}
                         <span className="font-mono px-0.5 text-large">
                             /comments

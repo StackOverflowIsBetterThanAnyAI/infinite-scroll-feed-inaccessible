@@ -62,7 +62,7 @@ const Users = () => {
         >
             <div className="w-full flex flex-col items-center">
                 <div className="w-full flex flex-col gap-0 sm:gap-4">
-                    <SectionHeader className="text-zinc-300/70">
+                    <SectionHeader className="text-zinc-300/70 animate-pulse">
                         Most Active Users
                     </SectionHeader>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
@@ -100,19 +100,19 @@ const Users = () => {
                                       >
                                           <CardHeader>
                                               <CardTitle>
-                                                  <Skeleton className="h-5 w-[196px] max-w-3/5 md:mb-1 rounded-full" />
+                                                  <Skeleton className="h-5 w-49 max-w-3/5 md:mb-1 rounded-full" />
                                               </CardTitle>
                                               <CardDescription>
                                                   <Skeleton className="h-4 w-36 max-w-2/5 mb-1 md:mb-4 rounded-full" />
                                               </CardDescription>
                                           </CardHeader>
                                           <CardContent className="flex flex-col gap-2">
-                                              <Skeleton className="h-[18px] w-lg max-w-4/5 rounded-full" />
-                                              <Skeleton className="h-[18px] w-lg max-w-4/5 rounded-full" />
-                                              <Skeleton className="h-[18px] w-32 max-w-4/5 hidden md:flex mb-8 rounded-full" />
+                                              <Skeleton className="h-4.5 w-lg max-w-4/5 rounded-full" />
+                                              <Skeleton className="h-4.5 w-lg max-w-4/5 rounded-full" />
+                                              <Skeleton className="h-4.5 w-32 max-w-4/5 hidden md:flex mb-8 rounded-full" />
                                           </CardContent>
                                           <CardFooter>
-                                              <Skeleton className="h-[22px] w-12 max-w-2/5 rounded-full" />
+                                              <Skeleton className="h-5.5 w-12 max-w-2/5 rounded-full" />
                                           </CardFooter>
                                       </Card>
                                   ))}

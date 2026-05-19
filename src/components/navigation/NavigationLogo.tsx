@@ -8,7 +8,11 @@ const NavigationLogo = () => {
 
     return (
         <Button asChild variant="ghost" className="px-0 sm:px-4 h-fit">
-            <div title="Back to the the Top" onClick={handleScrollToTop}>
+            <div
+                title="Back to the the Top"
+                onClick={handleScrollToTop}
+                role="button"
+            >
                 <img
                     src={logo}
                     width={48}
