@@ -10,66 +10,71 @@ The highlight of this page is the infinite scroll feed, which automatically load
 
 This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.com/StackOverflowIsBetterThanAnyAI/infinite-scroll-feed) with the only difference being that it intentionally violates accessibility as often as possible:
 
--   Accessible Feed:
+- Accessible Feed:
 
 <img width="1396" height="1914" alt="Image" src="https://github.com/user-attachments/assets/a4cda795-7a9e-40d1-85af-c5d7fcfc9c0f" />
 
--   Inaccessible Feed:
+- Inaccessible Feed:
 
 <img width="1392" height="1924" alt="Image" src="https://github.com/user-attachments/assets/bda8cbdd-bdd7-4733-8e18-d29714c3a6eb" />
 
 ## Added Inaccessibilities (WCAG 2.2)
 
--   decreased contrast of focus indicator (Success Criterion 1.4.11 Non-text Contrast)
--   the order of focusable content is in no meaningful order as it uses a zigzag function (Success Criterion 2.4.3 Focus Order)
--   removed title attribute of web page (Success Criterion 2.4.2 Page Titled)
--   removed language attribute of web page (Success Criterion 3.1.1 Language of Page)
+- the order of focusable content is in no meaningful order as it uses a zigzag function (Success Criterion 2.4.3 Focus Order)
+- removed title attribute of web page (Success Criterion 2.4.2 Page Titled)
+- wrong language attribute of web page (Success Criterion 3.1.1 Language of Page)
+- bad maximum scale value (Success Criterion 1.4.4 Resize Text)
 
 ### Navigation
 
--   no alt attribute for image (Success Criterion 1.1.1 Non-text Content)
--   no aria-label for back-to-top button (Success Criterion 1.1.1 Non-text Content)
--   no aria-label for burger menu on non-desktop viewports (Success Criterion 1.1.1 Non-text Content)
--   no aria-label for expanded burger menu navigation on non-desktop viewports (Success Criterion 1.1.1 Non-text Content)
--   replaced semantic html (nav) with div (Success Criterion 1.3.1 Info and Relationships)
--   trapped keyboard focus in navigation bar (Success Criterion 2.1.2 No Keyboard Trap)
--   made burger menu on non-desktop viewports and back-to-top no longer focussable (Success Criterion 2.1.1 Keyboard)
+- no alt attribute for image (Success Criterion 1.1.1 Non-text Content)
+- 2x no accessible name for button (Success Criterion 1.1.1 Non-text Content)
+- 2x button cannot be reached by keyboard (Success Criterion 2.1.1 Keyboard)
+- 2x button cannot be activated by keyboard (Success Criterion 2.1.1 Keyboard)
+- toggle button has no aria-expanded (Success Criterion 4.1.2 Name, Role, Value)
 
 ### Hero
 
--   no alt attribute for image (Success Criterion 1.1.1 Non-text Content)
--   replaced semantic html (section, h1, strong 4x, p 3x) with div and span (Success Criterion 1.3.1 Info and Relationships)
--   removed outline from button (Success Criterion 1.4.11 Non-text Contrast)
--   cut off main header (Success Criterion 1.4.12 Text Spacing)
--   insufficient line spacing (Success Criterion 1.4.12 Text Spacing)
--   made button no longer focussable (Success Criterion 2.1.1 Keyboard)
--   removed aria-label and title attributes for anchor (4x) (Success Criterion 2.4.4 Link Purpose (In Context))
+- no alt attribute for image (Success Criterion 1.1.1 Non-text Content)
+- 4x button cannot be reached by keyboard (Success Criterion 2.1.1 Keyboard)
+- 4x button cannot be activated by keyboard (Success Criterion 2.1.1 Keyboard)
+- cut off main header (Success Criterion 1.4.12 Text Spacing)
+- insufficient line spacing (Success Criterion 1.4.12 Text Spacing)
+- 4x bad accessible name for links (Success Criterion 2.4.4 Link Purpose (In Context))
+- aria-attribute cannot be applied to specific element (Success Criterion 1.3.1 Info and Relationships)
 
 ### Users
 
--   replaced semantic html (section, p 3x, h2) with div (Success Criterion 1.3.1 Info and Relationships)
--   reduced contrast for heading (Success Criterion 1.4.6 Contrast (Enhanced))
+- 6x mail content has no link (Success Criterion 2.1.1 Keyboard)
+- 10x link to website is a button instead of an anchor (Success Criterion 4.1.2 Name, Role, Value)
+- 10x button cannot be reached by keyboard (Success Criterion 2.1.1 Keyboard)
+- 10x button cannot be activated by keyboard (Success Criterion 2.1.1 Keyboard)
+- 1x insufficient color contrast (Success Criterion 1.4.3 Contrast (Minimum))
+- 1x animation cannot be paused (Success Criterion 2.2.2 Hide, Stop, Pause)
 
 ### Quote
 
--   replaced semantic html (section, blockquote, p, h2) with div (Success Criterion 1.3.1 Info and Relationships)
--   insufficient line spacing (Success Criterion 1.4.12 Text Spacing)
+- insufficient line spacing (Success Criterion 1.4.12 Text Spacing)
 
 ### Partners
 
--   no alt attribute for images (32x) (Success Criterion 1.1.1 Non-text Content)
--   replaced semantic html (section, h2) with div (Success Criterion 1.3.1 Info and Relationships)
--   inverted colors, reduce opacity of images (32x) (Success Criterion 1.4.11 Non-text Contrast)
+- 32x no alt attribute for images (Success Criterion 1.1.1 Non-text Content)
+- 32x inverted colors, reduce opacity of images (Success Criterion 1.4.11 Non-text Contrast)
+- 1x animation cannot be paused (Success Criterion 2.2.2 Hide, Stop, Pause)
 
 ### Posts
 
--   no aria-label for loading animation (Success Criterion 1.1.1 Non-text Content)
--   replaced semantic html (main, p 2x, h2 2x) with div (Success Criterion 1.3.1 Info and Relationships)
--   reduced contrast for top 10 posts (Success Criterion 1.4.3 Contrast (Minimum))
--   made load-more button no longer focussable (Success Criterion 2.1.1 Keyboard)
--   reduced size of buttons that show previous / next post (Success Criterion 2.5.8 Target Size (Minimum))
+- 11x insufficient color contrast (Success Criterion 1.4.3 Contrast (Minimum))
+- no accessible name for loading animation (Success Criterion 1.1.1 Non-text Content)
+- 3x button cannot be reached by keyboard (Success Criterion 2.1.1 Keyboard)
+- 3x button cannot be activated by keyboard (Success Criterion 2.1.1 Keyboard)
+- 2x insufficient clickable space (Success Criterion 2.5.8 Target Size (Minimum))
+- carousel with role region has no accessible name (Success Criterion 2.4.6 Headings and Labels)
 
 ### Footer
 
--   replaced semantic html (footer) with div (Success Criterion 1.3.1 Info and Relationships)
--   removed aria-label and title attributes for anchor (Success Criterion 2.4.4 Link Purpose (In Context))
+- no accessible name for link (Success Criterion 2.4.4 Link Purpose (In Context))
+
+### General
+
+- 6x text content is not included in a landmark (Success Criterion 2.4.1 Bypass Blocks)
