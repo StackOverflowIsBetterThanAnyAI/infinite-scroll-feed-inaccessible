@@ -24,6 +24,7 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 - removed title attribute of web page (Success Criterion 2.4.2 Page Titled)
 - wrong language attribute of web page (Success Criterion 3.1.1 Language of Page)
 - bad maximum scale value (Success Criterion 1.4.4 Resize Text)
+- 6x underline text when there is no link (Success Criterion 3.2.4 Consistent Identification)
 
 ### Navigation
 
