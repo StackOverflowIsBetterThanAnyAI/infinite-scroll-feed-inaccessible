@@ -11,7 +11,7 @@ jobs:
         uses: StackOverflowIsBetterThanAnyAI/full-accessibility-audit/.github/workflows/full-accessibility-audit.yml@master
         with:
             app_port: "5173"
-            start_command: "npx vite"
+            start_command: "npx vite --port 5173 --host"
 
     full-accessibility-audit-axe:
         name: Full Accessibility Audit Axe
