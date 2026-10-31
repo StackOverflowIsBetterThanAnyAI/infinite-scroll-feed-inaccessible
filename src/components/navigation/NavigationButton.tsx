@@ -16,7 +16,13 @@ const NavigationButton = ({
             <button
                 className="text-large"
                 title={`Scroll to ${label}`}
-                onClick={handleScroll}
+                aria-label="Scroll down"
+                onPointerDown={handleScroll}
+                onClick={(e) => {
+                    if (e.detail === 0) {
+                        handleScroll()
+                    }
+                }}
             >
                 {label}
             </button>

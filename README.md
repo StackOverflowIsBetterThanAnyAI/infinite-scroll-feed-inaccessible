@@ -23,7 +23,9 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 - the order of focusable content is in no meaningful order as it uses a zigzag function (Success Criterion 2.4.3 Focus Order)
 - removed title attribute of web page (Success Criterion 2.4.2 Page Titled)
 - wrong language attribute of web page (Success Criterion 3.1.1 Language of Page)
-- bad maximum scale value (Success Criterion 1.4.4 Resize Text)
+- zooming is disabled via maximum scale value and user-scalable (Success Criterion 1.4.4 Resize Text)
+- no visible focus indicator for any focusable element (Success Criterion 2.4.7 Focus Visible)
+- 5x single character key shortcuts which cannot be turned off or remapped (Success Criterion 2.1.4 Character Key Shortcuts)
 - 6x underline text when there is no link (Success Criterion 3.2.4 Consistent Identification)
 
 ### Navigation
@@ -33,6 +35,9 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 - 2x button cannot be reached by keyboard (Success Criterion 2.1.1 Keyboard)
 - 2x button cannot be activated by keyboard (Success Criterion 2.1.1 Keyboard)
 - toggle button has no aria-expanded (Success Criterion 4.1.2 Name, Role, Value)
+- 4x accessible name does not contain the visible label (Success Criterion 2.5.3 Label in Name)
+- 6x action is triggered on the down-event (Success Criterion 2.5.2 Pointer Cancellation)
+- mobile navigation menu closes automatically after 3 seconds (Success Criterion 2.2.1 Timing Adjustable)
 
 ### Hero
 
@@ -56,6 +61,8 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 ### Quote
 
 - insufficient line spacing (Success Criterion 1.4.12 Text Spacing)
+- quote content is hidden from assistive technologies (Success Criterion 1.3.1 Info and Relationships)
+- wrong language attribute for quote (Success Criterion 3.1.2 Language of Parts)
 
 ### Partners
 
@@ -66,6 +73,8 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 ### Posts
 
 - 11x insufficient color contrast (Success Criterion 1.4.3 Contrast (Minimum))
+- insufficient color contrast for all email addresses (Success Criterion 1.4.3 Contrast (Minimum))
+- DOM order of post cards does not match the visual order (Success Criterion 1.3.2 Meaningful Sequence)
 - no accessible name for loading animation (Success Criterion 1.1.1 Non-text Content)
 - 3x button cannot be reached by keyboard (Success Criterion 2.1.1 Keyboard)
 - 3x button cannot be activated by keyboard (Success Criterion 2.1.1 Keyboard)
@@ -75,6 +84,7 @@ This site is a rebuild of the [Infinite Scroll Feed Repository](https://github.c
 ### Footer
 
 - no accessible name for link (Success Criterion 2.4.4 Link Purpose (In Context))
+- focusable link is hidden from assistive technologies (Success Criterion 4.1.2 Name, Role, Value)
 
 ### General
 
