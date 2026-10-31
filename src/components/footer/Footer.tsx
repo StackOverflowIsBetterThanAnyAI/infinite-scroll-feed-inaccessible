@@ -25,6 +25,7 @@ const Footer = () => {
                 onKeyDown={(e) => handleKeyDown(e)}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-hidden="true"
                 className="w-fit flex items-center gap-1 px-4 py-1 rounded-sm m-auto underline
                 hover:bg-stone-700 active:bg-stone-600"
                 data-testid="footer-github-link"

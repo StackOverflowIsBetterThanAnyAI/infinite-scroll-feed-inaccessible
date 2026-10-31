@@ -15,6 +15,11 @@ input[type='button']:not(:disabled):active {
     @apply cursor-pointer drop-shadow-stone-600/25 drop-shadow-xs;
 }
 
+:focus,
+:focus-visible {
+    outline: none;
+}
+
 body {
     border: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -76,7 +81,7 @@ html {
     --card-foreground: oklch(0.141 0.005 285.823);
     --accent: oklch(0.967 0.001 286.375);
     --accent-foreground: oklch(0.21 0.006 285.885);
-    --muted-foreground: oklch(43.965% 0.00491 286.052);
+    --muted-foreground: oklch(66% 0.00491 286.052);
     --primary: oklch(0.21 0.006 285.885);
     --primary-foreground: oklch(0.985 0 0);
     --ring-dark: oklch(84.669% 0.00696 286.051);

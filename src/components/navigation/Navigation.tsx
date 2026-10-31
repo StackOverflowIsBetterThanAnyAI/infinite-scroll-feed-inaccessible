@@ -1,4 +1,4 @@
-import { useContext, useRef, useState } from 'react'
+import { useContext, useEffect, useRef, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import NavigationButton from './NavigationButton'
 import NavigationLogo from './NavigationLogo'
@@ -7,6 +7,7 @@ import { ContextQuote } from '@/context/ContextQuote'
 import { ContextTopTenPosts } from '@/context/ContextTopTenPosts'
 import { ContextTopUsers } from '@/context/ContextTopUsers'
 import { setWindowScrollTo } from '@/utils/setWindowScrollTo'
+import { useKeyboardShortcuts } from '@/hooks/useKeyboardShortcuts'
 import { useNavigationOpacity } from '@/hooks/useNavigationOpacity'
 import { useScreenWidth } from '@/hooks/useScreenWidth'
 
@@ -51,6 +52,14 @@ const Navigation = () => {
 
     useNavigationOpacity({ setNavOpacity, timerRef })
 
+    useEffect(() => {
+        if (!menuExpanded) {
+            return
+        }
+        const menuTimer = setTimeout(() => setMenuExpanded(false), 3000)
+        return () => clearTimeout(menuTimer)
+    }, [menuExpanded])
+
     const handleScrollToPartners = () => {
         setWindowScrollTo(SCREEN_WIDTH === 'DESKTOP' ? 72 : 168, partnersRef)
     }
@@ -66,6 +75,14 @@ const Navigation = () => {
     const handleScrollToTopTenPosts = () => {
         setWindowScrollTo(SCREEN_WIDTH === 'DESKTOP' ? 72 : 168, topTenPostsRef)
     }
+
+    useKeyboardShortcuts({
+        o: handleScrollToPartners,
+        p: handleScrollToTopTenPosts,
+        q: handleScrollToQuote,
+        t: () => window.scrollTo({ top: 0, behavior: 'smooth' }),
+        u: handleScrollToTopUsers,
+    })
 
     return (
         <>
@@ -103,7 +120,9 @@ const Navigation = () => {
                         <Button asChild variant="ghost">
                             <div
                                 className="text-very-large rounded-lg h-12 w-12"
-                                onClick={() => setMenuExpanded((prev) => !prev)}
+                                onPointerDown={() =>
+                                    setMenuExpanded((prev) => !prev)
+                                }
                                 role="button"
                                 title={
                                     menuExpanded

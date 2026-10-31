@@ -10,7 +10,7 @@ const NavigationLogo = () => {
         <Button asChild variant="ghost" className="px-0 sm:px-4 h-fit">
             <div
                 title="Back to the the Top"
-                onClick={handleScrollToTop}
+                onPointerDown={handleScrollToTop}
                 role="button"
             >
                 <img

@@ -79,24 +79,24 @@ const Feed = () => {
                                     feedItems.slice(0, 10).map((item) => (
                                         <CarouselItem key={item.id}>
                                             <Card className="gap-4">
-                                                <CardHeader>
-                                                    <CardTitle>
-                                                        {item.name}
-                                                    </CardTitle>
-                                                    <CardDescription>
-                                                        {item.email}
-                                                    </CardDescription>
-                                                </CardHeader>
-                                                <CardContent>
-                                                    <div className="text-stone-500/75">
-                                                        {item.body}
-                                                    </div>
-                                                </CardContent>
-                                                <CardFooter>
+                                                <CardFooter className="order-last">
                                                     <Badge variant="outline">
                                                         Post #{item.id}
                                                     </Badge>
                                                 </CardFooter>
+                                                <CardContent className="order-2">
+                                                    <div className="text-stone-500/75">
+                                                        {item.body}
+                                                    </div>
+                                                </CardContent>
+                                                <CardHeader className="order-1">
+                                                    <CardDescription className="order-last">
+                                                        {item.email}
+                                                    </CardDescription>
+                                                    <CardTitle>
+                                                        {item.name}
+                                                    </CardTitle>
+                                                </CardHeader>
                                             </Card>
                                         </CarouselItem>
                                     ))
@@ -135,20 +135,20 @@ const Feed = () => {
                     <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,448px),1fr))] grid-flow-row-dense w-full gap-4 lg:gap-6">
                         {feedItems.slice(10).map((item) => (
                             <Card key={item.id} className="gap-6">
-                                <CardHeader>
-                                    <CardTitle>{item.name}</CardTitle>
-                                    <CardDescription>
-                                        {item.email}
-                                    </CardDescription>
-                                </CardHeader>
-                                <CardContent>
-                                    <div>{item.body}</div>
-                                </CardContent>
-                                <CardFooter>
+                                <CardFooter className="order-last">
                                     <Badge variant="outline">
                                         Post #{item.id}
                                     </Badge>
                                 </CardFooter>
+                                <CardContent className="order-2">
+                                    <div>{item.body}</div>
+                                </CardContent>
+                                <CardHeader className="order-1">
+                                    <CardDescription className="order-last">
+                                        {item.email}
+                                    </CardDescription>
+                                    <CardTitle>{item.name}</CardTitle>
+                                </CardHeader>
                             </Card>
                         ))}
                     </div>
